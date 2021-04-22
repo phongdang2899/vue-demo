@@ -3,9 +3,10 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Error from "../views/Error.vue";
 import User from "../views/User.vue";
-import Detail from "../components/User/Detail.vue";
-import Edit from "../components/User/Edit.vue";
+import Detail from "../components/user/Detail.vue";
+import Edit from "../components/user/Edit.vue";
 import Navbar from "../components/Navbar";
+import Method from "../views/Method.vue";
 
 const routes = [
   {
@@ -17,6 +18,12 @@ const routes = [
   {
     path: "/about", name: "About", components: {
       default: About,
+      'Navbar': Navbar,
+    }
+  },
+  {
+    path: "/method", name: "Method", components: {
+      default: Method,
       'Navbar': Navbar,
     }
   },
