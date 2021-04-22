@@ -1,6 +1,7 @@
 <template>
     <div>
         <h4>User Detail: {{ $route.params.id }}</h4>
+        <h3>{{title}}</h3>
     </div>
     <router-link  class="btn btn-info" 
                 :to="{ name: 'Edit', params: { id: $route.params.id } }">Edit</router-link>
@@ -8,7 +9,15 @@
 
 <script>
     export default {
-        name: 'Detail'
+        name: 'Detail',
+        props: {
+            title: {
+                type: String
+            }
+            
+        }
+           
+        
     }
 </script>
 

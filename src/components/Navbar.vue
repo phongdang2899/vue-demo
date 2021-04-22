@@ -10,10 +10,13 @@
         <router-link to="/">Home</router-link>
       </li>
       <li>
-        <router-link to="/About">About</router-link>
+        <router-link to="/about">About</router-link>
       </li>
       <li>
-        <router-link to="/User">User</router-link>
+        <router-link to="/method">Method</router-link>
+      </li>
+      <li>
+        <router-link to="/user">User</router-link>
       </li>
     </ul>
   </div>

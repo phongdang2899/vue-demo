@@ -3,7 +3,6 @@
   <div class="col-2">
     <!-- <Navbar></Navbar> -->
     <router-view name="Navbar"></router-view>
-    <h3>AAAAAAAAAAAA</h3>
   </div>
   <div class="col-10">
     <router-view />
